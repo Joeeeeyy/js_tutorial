@@ -1,10 +1,17 @@
 let Phrase = require("jglopez-palindrome");
 
-let string = prompt("Please enter a string for palindrome testing:");
-let phrase = new Phrase(string);
+function palindromeTester() {
+    let string = prompt("Please enter a string for palindrome testing:");
+    let phrase = new Phrase(string);
 
-if(phrase.palindrome()) {
-    alert(`"${phrase.content}" is a palindrome!`);
-} else {
-    alert(`"${phrase.content}" is not a palindrome.`);
-}    
+    if(phrase.palindrome()) {
+        alert(`"${phrase.content}" is a palindrome!`);
+    } else {
+        alert(`"${phrase.content}" is not a palindrome.`);
+    }    
+}
+
+let button = dicument.querySelector(#palindromeTester);
+button.addEventListener("click", function() {
+    palindromeTester();
+});
